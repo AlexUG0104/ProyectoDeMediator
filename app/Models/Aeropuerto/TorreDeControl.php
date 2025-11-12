@@ -37,7 +37,7 @@ class TorreDeControl implements MediatorInterface
         $this->manejarEvento($emisor->id(), $emisor->tipo(), $evento);
     }
 
-    /** Nuevo: actuar por ID (para AJAX) */
+    /** Nuevo: actuar por ID */
     public function notificarPorId(string $id, string $evento): void
     {
         if (!isset($this->aeronaves[$id])) return;
