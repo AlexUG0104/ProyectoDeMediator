@@ -10,7 +10,7 @@
 <body class="min-h-screen bg-slate-100">
 <header class="bg-slate-900 text-white">
   <div class="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
-    <h1 class="text-xl font-bold">🛩️ Torre de Control — Patrón Mediador</h1>
+    <h1 class="text-xl font-bold"> Torre de Control — Patrón Mediador</h1>
     <a href="{{ route('aeropuerto.reiniciar') }}" class="text-sm underline decoration-indigo-400">Reiniciar</a>
   </div>
 </header>

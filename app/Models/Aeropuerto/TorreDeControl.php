@@ -99,7 +99,7 @@ case 'despego':
         if (!$this->pistaOcupada) {
             $this->pistaOcupada = true;
             $this->estados[$id] = 'en_pista';
-            $this->log[] = "🟢 AUTORIZADO {$accion} para {$tipo} #{$id}";
+            $this->log[] = " AUTORIZADO {$accion} para {$tipo} #{$id}";
         } else {
             $this->cola->enqueue($id.'|'.$accion);
             $this->estados[$id] = 'en_espera';
@@ -116,9 +116,9 @@ case 'despego':
             $tipo = $this->aeronaves[$id]->tipo();
             $this->pistaOcupada = true;
             $this->estados[$id] = 'en_pista';
-            $this->log[] = "🟢 AUTORIZADO {$accion} para {$tipo} #{$id} (siguiente en cola)";
+            $this->log[] = " AUTORIZADO {$accion} para {$tipo} #{$id} (siguiente en cola)";
         } else {
-            $this->log[] = "ℹ️ Pista libre y sin cola.";
+            $this->log[] = " Pista libre y sin cola.";
         }
     }
 
